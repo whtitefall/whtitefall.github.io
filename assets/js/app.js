@@ -14,7 +14,7 @@
       "skip.posts": "Skip to posts",
       "skip.content": "Skip to content",
       "nav.resume": "Resume",
-      "nav.blog": "Blog",
+      "nav.blog": "白瀑博客",
       "theme.dark": "Dark",
       "theme.light": "Light",
       "resume.role": "Software Developer",
@@ -73,7 +73,7 @@
       "research.award": "Merit scholarship",
       "blog.kicker": "Writing",
       "blog.note": "Notes",
-      "blog.title": "Blog",
+      "blog.title": "白瀑博客",
       "blog.subtitle": "Notes on software development, AI tooling, system design, and shipping small useful products.",
       "blog.latest": "Latest",
       "blog.posts": "Posts",
@@ -83,7 +83,7 @@
       "blog.searchPlaceholder": "Search title, tag, or summary",
       "blog.emptyTitle": "No posts found",
       "blog.emptyBody": "Try another keyword or topic.",
-      "post.back": "← Back to Blog",
+      "post.back": "← Back to 白瀑博客",
       "post.related": "Continue Reading",
       "notFound.title": "Page not found",
       "notFound.body": "This link does not match an existing page or post.",
@@ -94,7 +94,7 @@
       "skip.posts": "跳到文章列表",
       "skip.content": "跳到正文",
       "nav.resume": "简历",
-      "nav.blog": "博客",
+      "nav.blog": "白瀑博客",
       "theme.dark": "深色",
       "theme.light": "浅色",
       "resume.role": "软件开发工程师",
@@ -153,7 +153,7 @@
       "research.award": "Merit scholarship",
       "blog.kicker": "写作",
       "blog.note": "笔记",
-      "blog.title": "博客",
+      "blog.title": "白瀑博客",
       "blog.subtitle": "记录软件开发、AI 工具、系统设计，以及把小工具做出来的过程。",
       "blog.latest": "最新",
       "blog.posts": "文章",
@@ -163,7 +163,7 @@
       "blog.searchPlaceholder": "搜索标题、标签或摘要",
       "blog.emptyTitle": "没有找到文章",
       "blog.emptyBody": "换一个关键词或主题试试。",
-      "post.back": "← 返回博客",
+      "post.back": "← 返回白瀑博客",
       "post.related": "继续阅读",
       "notFound.title": "页面不存在",
       "notFound.body": "这个链接没有对应的页面或文章。",
@@ -368,7 +368,7 @@
       return;
     }
 
-    document.title = `${localized(post.title)} - ${blog.site.title || "白瀑"}`;
+    document.title = `${localized(post.title)} - ${blog.site.title || "Yuanzheng Hu"}`;
 
     const description = document.querySelector('meta[name="description"]');
     if (description) {
@@ -394,9 +394,9 @@
 
   function updateDocumentTitle() {
     if (page === "blog") {
-      document.title = `${t("blog.title")} - 白瀑`;
+      document.title = `${t("blog.title")} - Yuanzheng Hu`;
     } else if (page === "resume") {
-      document.title = "白瀑 | Yuanzheng Hu";
+      document.title = "Yuanzheng Hu";
     } else if (page === "post") {
       initPost();
     }
