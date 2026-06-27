@@ -247,6 +247,12 @@ code {
   margin-bottom: 1rem;
 }
 
+.lower-grid {
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  margin-top: 1rem;
+}
+
 .resume-section,
 .resume-card {
   border: 1px solid var(--line);
@@ -355,6 +361,57 @@ code {
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-top: 1rem;
+}
+
+.mini-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+}
+
+.mini-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.55rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+  color: var(--muted);
+  padding: 0.12rem 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 740;
+}
+
+.detail-list {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.detail-list article {
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+}
+
+.compact-list {
+  gap: 0.7rem;
+}
+
+.award-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+  padding: 0.8rem 0.9rem;
+}
+
+.award-callout span {
+  color: var(--muted);
 }
 
 .skill-list span,
@@ -652,6 +709,7 @@ code {
   }
 
   .resume-grid,
+  .lower-grid,
   .toolbar {
     grid-template-columns: 1fr;
   }
