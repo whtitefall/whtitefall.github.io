@@ -368,7 +368,7 @@
       return;
     }
 
-    document.title = `${localized(post.title)} - ${blog.site.title || "Yuanzheng Hu"}`;
+    document.title = `${localized(post.title)} - ${blog.site.title || "白瀑"}`;
 
     const description = document.querySelector('meta[name="description"]');
     if (description) {
@@ -394,9 +394,9 @@
 
   function updateDocumentTitle() {
     if (page === "blog") {
-      document.title = `${t("blog.title")} - Yuanzheng Hu`;
+      document.title = `${t("blog.title")} - 白瀑`;
     } else if (page === "resume") {
-      document.title = "Yuanzheng Hu";
+      document.title = "白瀑 | Yuanzheng Hu";
     } else if (page === "post") {
       initPost();
     }

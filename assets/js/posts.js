@@ -1,7 +1,7 @@
 window.BLOG = {
   site: {
-    title: "Yuanzheng Hu",
-    author: "Yuanzheng Hu"
+    title: "白瀑",
+    author: "白瀑"
   },
   posts: []
 };

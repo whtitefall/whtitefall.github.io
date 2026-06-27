@@ -1,4 +1,4 @@
-# Yuanzheng Hu
+# 白瀑
 
 Personal resume homepage and lightweight bilingual blog for GitHub Pages.
 
