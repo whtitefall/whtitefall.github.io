@@ -216,14 +216,13 @@ code {
 .post-hero h1,
 .not-found h1 {
   max-width: 920px;
-  margin: 0.55rem 0 0;
+  margin: 0;
   font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;
   font-size: 4.8rem;
   font-weight: 500;
   line-height: 0.96;
 }
 
-.resume-headline,
 .page-intro p,
 .post-dek {
   max-width: 760px;
@@ -268,33 +267,6 @@ code {
   background: var(--paper);
 }
 
-.resume-snapshot {
-  border-top: 1px solid var(--ink);
-  border-bottom: 1px solid var(--ink);
-  margin-bottom: 2.5rem;
-}
-
-.resume-snapshot dl {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 0;
-}
-
-.resume-snapshot div {
-  min-height: 7rem;
-  border-right: 1px solid var(--line);
-  padding: 1rem 1rem 1.2rem 0;
-}
-
-.resume-snapshot div + div {
-  padding-left: 1rem;
-}
-
-.resume-snapshot div:last-child {
-  border-right: 0;
-}
-
-.resume-snapshot dt,
 .section-kicker {
   margin: 0 0 0.55rem;
   color: var(--accent);
@@ -302,13 +274,6 @@ code {
   font-size: 0.76rem;
   font-weight: 760;
   text-transform: uppercase;
-}
-
-.resume-snapshot dd {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 720;
-  line-height: 1.35;
 }
 
 .resume-section {
@@ -746,25 +711,9 @@ code {
     font-size: 3.4rem;
   }
 
-  .resume-snapshot dl,
   .split-section,
   .toolbar {
     grid-template-columns: 1fr;
-  }
-
-  .resume-snapshot div {
-    min-height: auto;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-    padding: 0.85rem 0;
-  }
-
-  .resume-snapshot div + div {
-    padding-left: 0;
-  }
-
-  .resume-snapshot div:last-child {
-    border-bottom: 0;
   }
 
   .tag-filter {
@@ -803,7 +752,6 @@ code {
     font-size: 2.55rem;
   }
 
-  .resume-headline,
   .page-intro p,
   .post-dek {
     font-size: 1rem;
