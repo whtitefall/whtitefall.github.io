@@ -1,34 +1,40 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Post - Yuanzheng Hu</title>
-    <meta name="description" content="Yuanzheng Hu 的博客文章。">
+    <meta name="description" content="A blog post by Yuanzheng Hu.">
     <meta property="og:type" content="article">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body data-page="post">
-    <a class="skip-link" href="#post-content">跳到正文</a>
+    <a class="skip-link" href="#post-content" data-i18n="skip.content">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="白瀑笔记首页">
+      <a class="brand" href="index.html" aria-label="Yuanzheng Hu home">
         <span class="brand-mark">YH</span>
         <span class="brand-text">Yuanzheng Hu</span>
       </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="index.html">Resume</a>
-        <a class="is-active" href="blog.html">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="nav.resume">Resume</a>
+        <a class="is-active" href="blog.html" data-i18n="nav.blog">Blog</a>
         <a href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer">LinkedIn</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换明暗主题">Dark</button>
       </nav>
+      <div class="site-controls" aria-label="Site settings">
+        <div class="language-switch" id="language-switch" aria-label="Language">
+          <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark</button>
+      </div>
     </header>
 
     <main class="post-page">
       <header class="post-hero">
         <div class="post-hero-content">
-          <a class="back-link" href="blog.html">&larr; Back to Blog</a>
+          <a class="back-link" href="blog.html" data-i18n="post.back">&larr; Back to Blog</a>
           <div class="post-tags" id="post-tags"></div>
           <h1 id="post-title">Post</h1>
           <p class="post-dek" id="post-excerpt"></p>
@@ -39,14 +45,14 @@
       <article class="article-body" id="post-content"></article>
 
       <section class="related-section" aria-labelledby="related-title">
-        <h2 id="related-title">继续阅读</h2>
+        <h2 id="related-title" data-i18n="post.related">Continue Reading</h2>
         <div class="related-grid" id="related-posts"></div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p><span id="footer-year"></span> Yuanzheng Hu</p>
-      <a href="index.html">Resume</a>
+      <a href="index.html" data-i18n="nav.resume">Resume</a>
     </footer>
 
     <script src="assets/js/posts.js" defer></script>

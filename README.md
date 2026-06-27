@@ -1,6 +1,6 @@
 # Yuanzheng Hu
 
-Personal resume homepage and lightweight blog for GitHub Pages.
+Personal resume homepage and lightweight bilingual blog for GitHub Pages.
 
 ## Structure
 
@@ -8,7 +8,10 @@ Personal resume homepage and lightweight blog for GitHub Pages.
 - `blog.html`: blog listing tab
 - `post.html`: blog post detail page
 - `assets/js/posts.js`: editable blog post data
+- `assets/js/app.js`: language/theme and blog rendering
 - `assets/css/styles.css`: site styles
+
+The site defaults to English and light theme. Visitors can switch to Chinese or dark theme from the header.
 
 ## Local Preview
 

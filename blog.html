@@ -1,63 +1,72 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog - Yuanzheng Hu</title>
-    <meta name="description" content="Yuanzheng Hu 的技术博客。">
+    <meta name="description" content="Yuanzheng Hu's technical blog.">
     <meta property="og:title" content="Blog - Yuanzheng Hu">
-    <meta property="og:description" content="开发、AI 工具、系统设计和个人复盘。">
+    <meta property="og:description" content="Software development, AI tooling, system design, and project notes.">
     <meta property="og:type" content="website">
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body data-page="blog">
-    <a class="skip-link" href="#posts">跳到文章列表</a>
+    <a class="skip-link" href="#posts" data-i18n="skip.posts">Skip to posts</a>
 
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Yuanzheng Hu 首页">
+      <a class="brand" href="index.html" aria-label="Yuanzheng Hu home">
         <span class="brand-mark">YH</span>
         <span class="brand-text">Yuanzheng Hu</span>
       </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="index.html">Resume</a>
-        <a class="is-active" href="blog.html">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="nav.resume">Resume</a>
+        <a class="is-active" href="blog.html" data-i18n="nav.blog">Blog</a>
         <a href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer">LinkedIn</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换明暗主题">Dark</button>
       </nav>
+      <div class="site-controls" aria-label="Site settings">
+        <div class="language-switch" id="language-switch" aria-label="Language">
+          <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark</button>
+      </div>
     </header>
 
     <main class="blog-page">
       <section class="page-intro" aria-labelledby="blog-title">
-        <p class="eyebrow">Writing</p>
-        <h1 id="blog-title">Blog</h1>
-        <p>Notes on software development, AI tooling, system design, and shipping small useful products.</p>
+        <div class="hero-label">
+          <span data-i18n="blog.kicker">Writing</span>
+          <span data-i18n="blog.note">Notes</span>
+        </div>
+        <h1 id="blog-title" data-i18n="blog.title">Blog</h1>
+        <p data-i18n="blog.subtitle">Notes on software development, AI tooling, system design, and shipping small useful products.</p>
       </section>
 
       <section class="feed-section" id="posts" aria-labelledby="posts-title">
         <div class="section-head">
           <div>
-            <p class="section-kicker">Latest</p>
-            <h2 id="posts-title">Posts</h2>
+            <p class="section-kicker" data-i18n="blog.latest">Latest</p>
+            <h2 id="posts-title" data-i18n="blog.posts">Posts</h2>
           </div>
-          <dl class="site-stats" aria-label="博客统计">
+          <dl class="site-stats" aria-label="Blog stats">
             <div>
               <dt id="post-count">0</dt>
-              <dd>posts</dd>
+              <dd data-i18n="blog.statPosts">posts</dd>
             </div>
             <div>
               <dt id="tag-count">0</dt>
-              <dd>topics</dd>
+              <dd data-i18n="blog.statTopics">topics</dd>
             </div>
           </dl>
         </div>
 
-        <div class="toolbar" aria-label="筛选文章">
+        <div class="toolbar" aria-label="Filter posts">
           <label class="search-box" for="search-input">
-            <span>Search</span>
-            <input id="search-input" type="search" placeholder="Search title, tag, or summary">
+            <span data-i18n="blog.search">Search</span>
+            <input id="search-input" type="search" placeholder="Search title, tag, or summary" data-i18n-placeholder="blog.searchPlaceholder">
           </label>
-          <div class="tag-filter" id="tag-filter" aria-label="按标签筛选"></div>
+          <div class="tag-filter" id="tag-filter" aria-label="Filter by tag"></div>
         </div>
 
         <div class="post-grid" id="post-list" aria-live="polite"></div>
@@ -66,7 +75,7 @@
 
     <footer class="site-footer">
       <p><span id="footer-year"></span> Yuanzheng Hu</p>
-      <a href="index.html">Resume</a>
+      <a href="index.html" data-i18n="nav.resume">Resume</a>
     </footer>
 
     <script src="assets/js/posts.js" defer></script>

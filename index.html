@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,223 +12,241 @@
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body data-page="resume">
-    <a class="skip-link" href="#resume">跳到简历内容</a>
+    <a class="skip-link" href="#resume" data-i18n="skip.resume">Skip to resume</a>
 
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Yuanzheng Hu 首页">
+      <a class="brand" href="index.html" aria-label="Yuanzheng Hu home">
         <span class="brand-mark">YH</span>
         <span class="brand-text">Yuanzheng Hu</span>
       </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a class="is-active" href="index.html">Resume</a>
-        <a href="blog.html">Blog</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="is-active" href="index.html" data-i18n="nav.resume">Resume</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
         <a href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer">LinkedIn</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换明暗主题">Dark</button>
       </nav>
+      <div class="site-controls" aria-label="Site settings">
+        <div class="language-switch" id="language-switch" aria-label="Language">
+          <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">Dark</button>
+      </div>
     </header>
 
     <main id="resume" class="resume-page">
       <section class="resume-hero" aria-labelledby="resume-title">
-        <p class="eyebrow">Software Developer</p>
+        <div class="hero-label">
+          <span data-i18n="resume.role">Software Developer</span>
+          <span>Ottawa</span>
+        </div>
         <h1 id="resume-title">Yuanzheng Hu</h1>
-        <p class="resume-headline">
+        <p class="resume-headline" data-i18n="resume.headline">
           SDE at Nokia in Ottawa, with experience across optical management systems, Java Spring Boot, React, Python, machine learning, automation, and firmware testing.
         </p>
-        <div class="resume-actions" aria-label="联系方式">
-          <a class="button button-primary" href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer">View LinkedIn</a>
-          <a class="button button-secondary" href="blog.html">Read Blog</a>
+        <div class="resume-actions" aria-label="Contact links">
+          <a class="button button-primary" href="https://www.linkedin.com/in/yuanzheng-hu/" rel="noreferrer" data-i18n="action.linkedin">View LinkedIn</a>
+          <a class="button button-secondary" href="blog.html" data-i18n="action.blog">Read Blog</a>
         </div>
       </section>
 
-      <section class="resume-grid" aria-label="简历详情">
-        <article class="resume-section resume-summary">
-          <p class="section-kicker">Profile</p>
-          <h2>About</h2>
-          <p>
-            Interested in machine learning, adversarial attack, model pruning, reinforcement learning, and transfer learning related topics.
-            My work spans software development, visualization tools, graph neural networks, research tooling, automation, and firmware testing.
-          </p>
-        </article>
+      <section class="resume-snapshot" aria-label="Resume snapshot">
+        <dl>
+          <div>
+            <dt data-i18n="fact.current">Current</dt>
+            <dd data-i18n="fact.currentValue">Software Developer @ Nokia</dd>
+          </div>
+          <div>
+            <dt data-i18n="fact.location">Location</dt>
+            <dd data-i18n="fact.locationValue">Greater Ottawa Area</dd>
+          </div>
+          <div>
+            <dt data-i18n="fact.education">Education</dt>
+            <dd data-i18n="fact.educationValue">MSc and BSc, Computer Science</dd>
+          </div>
+          <div>
+            <dt data-i18n="fact.languages">Languages</dt>
+            <dd data-i18n="fact.languagesValue">English, Chinese</dd>
+          </div>
+        </dl>
+      </section>
 
-        <aside class="resume-card" aria-label="快速信息">
-          <dl class="quick-facts">
-            <div>
-              <dt>Current</dt>
-              <dd>Software Developer @ Nokia</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Greater Ottawa Area</dd>
-            </div>
-            <div>
-              <dt>Education</dt>
-              <dd>MSc and BSc, Computer Science</dd>
-            </div>
-            <div>
-              <dt>Languages</dt>
-              <dd>English, Chinese</dd>
-            </div>
-          </dl>
-        </aside>
+      <section class="resume-section intro-section" aria-labelledby="profile-title">
+        <div class="section-index">01</div>
+        <div class="section-body">
+          <p class="section-kicker" data-i18n="profile.kicker">Profile</p>
+          <h2 id="profile-title" data-i18n="profile.title">About</h2>
+          <p data-i18n="profile.body">
+            Interested in machine learning, adversarial attack, model pruning, reinforcement learning, and transfer learning related topics. My work spans software development, visualization tools, graph neural networks, research tooling, automation, and firmware testing.
+          </p>
+        </div>
       </section>
 
       <section class="resume-section" aria-labelledby="experience-title">
-        <div class="section-head compact">
-          <div>
-            <p class="section-kicker">Experience</p>
-            <h2 id="experience-title">Work</h2>
+        <div class="section-index">02</div>
+        <div class="section-body">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker" data-i18n="experience.kicker">Experience</p>
+              <h2 id="experience-title" data-i18n="experience.title">Work</h2>
+            </div>
+            <p class="source-note" data-i18n="experience.source">Source: LinkedIn profile PDF.</p>
           </div>
-          <p class="source-note">Source: LinkedIn profile PDF.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">May 2023 - Present</div>
-            <div>
-              <h3>Software Developer, Nokia</h3>
-              <p>Optical Management System developer on the WaveSuite team.</p>
-              <div class="mini-tags">
-                <span>Java Spring Boot</span>
-                <span>React TypeScript</span>
+          <div class="timeline">
+            <article class="timeline-item">
+              <time data-i18n="job.nokiaCurrent.date">May 2023 - Present</time>
+              <div>
+                <h3 data-i18n="job.nokiaCurrent.title">Software Developer, Nokia</h3>
+                <p data-i18n="job.nokiaCurrent.body">Optical Management System developer on the WaveSuite team.</p>
+                <div class="mini-tags">
+                  <span>Java Spring Boot</span>
+                  <span>React TypeScript</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">May 2022 - Dec 2022</div>
-            <div>
-              <h3>Software Developer, Nokia</h3>
-              <p>NFM-T developer. Developed an advanced OTDR diagnosis visualization tool.</p>
-              <div class="mini-tags">
-                <span>Java Spring Boot</span>
-                <span>React JS</span>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.nokiaPast.date">May 2022 - Dec 2022</time>
+              <div>
+                <h3 data-i18n="job.nokiaPast.title">Software Developer, Nokia</h3>
+                <p data-i18n="job.nokiaPast.body">NFM-T developer. Developed an advanced OTDR diagnosis visualization tool.</p>
+                <div class="mini-tags">
+                  <span>Java Spring Boot</span>
+                  <span>React JS</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Jan 2022 - Dec 2022</div>
-            <div>
-              <h3>Teaching Assistant, University of Ottawa</h3>
-              <p>CSI 2110 Data Structures and Algorithms; CSI 3140 WWW Structures, Techniques and Standards.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Mar 2021 - Jun 2021</div>
-            <div>
-              <h3>Machine Learning Engineer, Silexon AI</h3>
-              <p>Worked on graph neural network algorithms for drug and protein reaction prediction.</p>
-              <div class="mini-tags">
-                <span>PyTorch</span>
-                <span>Python</span>
-                <span>GNN</span>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.ta.date">Jan 2022 - Dec 2022</time>
+              <div>
+                <h3 data-i18n="job.ta.title">Teaching Assistant, University of Ottawa</h3>
+                <p data-i18n="job.ta.body">CSI 2110 Data Structures and Algorithms; CSI 3140 WWW Structures, Techniques and Standards.</p>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">May 2020 - Aug 2020</div>
-            <div>
-              <h3>Research Assistant, University of Ottawa</h3>
-              <p>Built data analysis and visualization tooling for skeleton motion and human wearable equipment.</p>
-              <div class="mini-tags">
-                <span>Python</span>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.silexon.date">Mar 2021 - Jun 2021</time>
+              <div>
+                <h3 data-i18n="job.silexon.title">Machine Learning Engineer, Silexon AI</h3>
+                <p data-i18n="job.silexon.body">Worked on graph neural network algorithms for drug and protein reaction prediction.</p>
+                <div class="mini-tags">
+                  <span>PyTorch</span>
+                  <span>Python</span>
+                  <span>GNN</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Sep 2019 - Dec 2019</div>
-            <div>
-              <h3>Software Engineer, Microsemi Corporation</h3>
-              <p>Worked on firmware development and testing for the time synchronization team.</p>
-              <div class="mini-tags">
-                <span>Python</span>
-                <span>C++</span>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.raMotion.date">May 2020 - Aug 2020</time>
+              <div>
+                <h3 data-i18n="job.raMotion.title">Research Assistant, University of Ottawa</h3>
+                <p data-i18n="job.raMotion.body">Built data analysis and visualization tooling for skeleton motion and human wearable equipment.</p>
+                <div class="mini-tags">
+                  <span>Python</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Jan 2019 - Apr 2019</div>
-            <div>
-              <h3>Hardware Automation Engineer, ORBCOMM</h3>
-              <p>Developed multi-threaded and multi-processing automation for power supplies, temperature chambers, antennas, multimeters, spectrum analyzers, and desktop voltage visualization.</p>
-              <div class="mini-tags">
-                <span>Python</span>
-                <span>C#</span>
-                <span>Automation</span>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.microsemi.date">Sep 2019 - Dec 2019</time>
+              <div>
+                <h3 data-i18n="job.microsemi.title">Software Engineer, Microsemi Corporation</h3>
+                <p data-i18n="job.microsemi.body">Worked on firmware development and testing for the time synchronization team.</p>
+                <div class="mini-tags">
+                  <span>Python</span>
+                  <span>C++</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">May 2018 - Aug 2018</div>
-            <div>
-              <h3>Research Assistant, University of Ottawa</h3>
-              <p>Re-implemented a community detection algorithm and used multi-threading and multi-processing techniques to optimize runtime.</p>
-              <div class="mini-tags">
-                <span>AWS</span>
-                <span>Python</span>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.orbcomm.date">Jan 2019 - Apr 2019</time>
+              <div>
+                <h3 data-i18n="job.orbcomm.title">Hardware Automation Engineer, ORBCOMM</h3>
+                <p data-i18n="job.orbcomm.body">Developed multi-threaded and multi-processing automation for power supplies, temperature chambers, antennas, multimeters, spectrum analyzers, and desktop voltage visualization.</p>
+                <div class="mini-tags">
+                  <span>Python</span>
+                  <span>C#</span>
+                  <span>Automation</span>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+            <article class="timeline-item">
+              <time data-i18n="job.raCommunity.date">May 2018 - Aug 2018</time>
+              <div>
+                <h3 data-i18n="job.raCommunity.title">Research Assistant, University of Ottawa</h3>
+                <p data-i18n="job.raCommunity.body">Re-implemented a community detection algorithm and used multi-threading and multi-processing techniques to optimize runtime.</p>
+                <div class="mini-tags">
+                  <span>AWS</span>
+                  <span>Python</span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="resume-section" aria-labelledby="skills-title">
-        <p class="section-kicker">Skills</p>
-        <h2 id="skills-title">Technical Areas</h2>
-        <div class="skill-list">
-          <span>Node.js</span>
-          <span>Python</span>
-          <span>Spring Boot</span>
-          <span>Java</span>
-          <span>React</span>
-          <span>TypeScript</span>
-          <span>PyTorch</span>
-          <span>Graph Neural Networks</span>
-          <span>C++</span>
-          <span>C#</span>
-          <span>AWS</span>
-          <span>Automation</span>
+        <div class="section-index">03</div>
+        <div class="section-body">
+          <p class="section-kicker" data-i18n="skills.kicker">Skills</p>
+          <h2 id="skills-title" data-i18n="skills.title">Technical Areas</h2>
+          <div class="skill-list">
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>Spring Boot</span>
+            <span>Java</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>PyTorch</span>
+            <span>Graph Neural Networks</span>
+            <span>C++</span>
+            <span>C#</span>
+            <span>AWS</span>
+            <span>Automation</span>
+          </div>
         </div>
       </section>
 
-      <section class="resume-grid lower-grid" aria-label="Education and publications">
-        <article class="resume-section">
-          <p class="section-kicker">Education</p>
-          <h2>Education</h2>
-          <div class="detail-list">
-            <article>
-              <h3>University of Ottawa</h3>
-              <p>Master's degree, Computer Science with Concentration in Artificial Intelligence, 2021 - 2023</p>
-            </article>
-            <article>
-              <h3>University of Ottawa</h3>
-              <p>Bachelor of Science, Computer Science, 2016 - 2020</p>
-            </article>
-          </div>
-        </article>
+      <section class="resume-section education-research" aria-label="Education and publications">
+        <div class="section-index">04</div>
+        <div class="section-body split-section">
+          <article>
+            <p class="section-kicker" data-i18n="education.kicker">Education</p>
+            <h2 data-i18n="education.title">Education</h2>
+            <div class="detail-list">
+              <article>
+                <h3>University of Ottawa</h3>
+                <p data-i18n="education.master">Master's degree, Computer Science with Concentration in Artificial Intelligence, 2021 - 2023</p>
+              </article>
+              <article>
+                <h3>University of Ottawa</h3>
+                <p data-i18n="education.bachelor">Bachelor of Science, Computer Science, 2016 - 2020</p>
+              </article>
+            </div>
+          </article>
 
-        <article class="resume-section">
-          <p class="section-kicker">Research</p>
-          <h2>Publications</h2>
-          <div class="detail-list compact-list">
-            <article>
-              <p>Convolutional Neural Networks in Multi-Class Classification of Medical Data</p>
-            </article>
-            <article>
-              <p>Explainable Multi-class Classification of Medical Data</p>
-            </article>
-            <article>
-              <p>Explainable Multi-class Classification of the CAMH COVID-19 Mental Health Data</p>
-            </article>
-          </div>
-          <div class="award-callout">
-            <strong>Honor</strong>
-            <span>Merit scholarship</span>
-          </div>
-        </article>
+          <article>
+            <p class="section-kicker" data-i18n="research.kicker">Research</p>
+            <h2 data-i18n="research.title">Publications</h2>
+            <div class="detail-list compact-list">
+              <article>
+                <p data-i18n="research.pub1">Convolutional Neural Networks in Multi-Class Classification of Medical Data</p>
+              </article>
+              <article>
+                <p data-i18n="research.pub2">Explainable Multi-class Classification of Medical Data</p>
+              </article>
+              <article>
+                <p data-i18n="research.pub3">Explainable Multi-class Classification of the CAMH COVID-19 Mental Health Data</p>
+              </article>
+            </div>
+            <div class="award-callout">
+              <strong data-i18n="research.honor">Honor</strong>
+              <span data-i18n="research.award">Merit scholarship</span>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p><span id="footer-year"></span> Yuanzheng Hu</p>
-      <a href="blog.html">Blog</a>
+      <a href="blog.html" data-i18n="nav.blog">Blog</a>
     </footer>
 
     <script src="assets/js/posts.js" defer></script>

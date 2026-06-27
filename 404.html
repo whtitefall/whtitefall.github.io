@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,11 @@
   <body>
     <main class="not-found">
       <p class="section-kicker">404</p>
-      <h1>Page not found</h1>
-      <p>This link does not match an existing page or post.</p>
-      <a class="button button-primary" href="index.html">Back to Resume</a>
+      <h1 data-i18n="notFound.title">Page not found</h1>
+      <p data-i18n="notFound.body">This link does not match an existing page or post.</p>
+      <a class="button button-primary" href="index.html" data-i18n="notFound.action">Back to Resume</a>
     </main>
+    <script src="assets/js/posts.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
   </body>
 </html>
