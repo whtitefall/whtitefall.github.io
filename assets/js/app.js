@@ -316,7 +316,7 @@
   function findPost() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id") || window.location.hash.replace("#", "");
-    return posts.find((post) => post.id === id) || posts[0];
+    return posts.find((post) => post.id === id) || null;
   }
 
   function renderRelated(currentPost) {
@@ -340,6 +340,34 @@
 
   function initPost() {
     const post = findPost();
+    if (!post) {
+      document.body.dataset.page = "404";
+      setText("#post-title", t("notFound.title"));
+      setText("#post-excerpt", t("notFound.body"));
+      setText("#post-meta", "");
+
+      const tags = $("#post-tags");
+      if (tags) {
+        tags.innerHTML = "";
+      }
+
+      const content = $("#post-content");
+      if (content) {
+        content.innerHTML = `<p><a href="index.html">${escapeHtml(t("notFound.action"))}</a></p>`;
+      }
+
+      const related = $("#related-posts");
+      if (related) {
+        related.innerHTML = "";
+      }
+
+      const relatedSection = $(".related-section");
+      if (relatedSection) {
+        relatedSection.hidden = true;
+      }
+      return;
+    }
+
     document.title = `${localized(post.title)} - ${blog.site.title || "Yuanzheng Hu"}`;
 
     const description = document.querySelector('meta[name="description"]');
