@@ -308,8 +308,7 @@ code {
 }
 
 .resume-section p,
-.timeline-item p,
-.source-note {
+.timeline-item p {
   margin: 0;
   color: var(--muted);
 }
@@ -325,12 +324,6 @@ code {
   justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 1.15rem;
-}
-
-.source-note {
-  max-width: 260px;
-  font-size: 0.9rem;
-  text-align: right;
 }
 
 .timeline {
@@ -769,11 +762,6 @@ code {
   .section-head {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .source-note {
-    max-width: none;
-    text-align: left;
   }
 
   .timeline-item {
