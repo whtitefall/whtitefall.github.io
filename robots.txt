@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://whtitefall.github.io/sitemap.xml
+Sitemap: https://whtitefall.github.io/yuanzhenghu/sitemap.xml
