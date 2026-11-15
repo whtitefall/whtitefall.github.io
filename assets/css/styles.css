@@ -789,3 +789,115 @@ code {
     flex-direction: column;
   }
 }
+
+/* Hero details */
+.resume-hero .hero-label {
+  margin: 0 0 1.1rem;
+}
+
+.hero-headline {
+  max-width: 760px;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.hero-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.2rem 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.hero-facts dt {
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.hero-facts dd {
+  margin: 0.2rem 0 0;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.profile-text {
+  max-width: 780px;
+  margin-top: 1rem !important;
+  font-size: 1.03rem;
+}
+
+.job-bullets {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.job-bullets li + li {
+  margin-top: 0.35rem;
+}
+
+.job-bullets li::marker {
+  color: var(--accent);
+}
+
+.skill-groups {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.2rem;
+}
+
+.skill-group {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 1.2rem;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+}
+
+.skill-group h3 {
+  color: var(--olive);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem !important;
+  padding-top: 0.3rem;
+}
+
+.skill-group .skill-list {
+  margin-top: 0;
+}
+
+.pub-link {
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.pub-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.pub-meta {
+  margin-top: 0.3rem !important;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 920px) {
+  .hero-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-group {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
